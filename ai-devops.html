@@ -14,7 +14,7 @@
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600&family=Inter:wght@700;800&display=swap" rel="stylesheet">
 
     <!-- Icon Font Stylesheet -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
@@ -58,7 +58,7 @@
                         <a href="about.html" class="nav-item nav-link">About</a>
                         <a href="service.html" class="nav-item nav-link">Service</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Pages</a>
                             <div class="dropdown-menu m-0">
                                 <a href="devops.html" class="dropdown-item">DevOps as a Support</a>
                                 <a href="sre.html" class="dropdown-item">SRE as a Support</a>
@@ -71,9 +71,10 @@
                                 <a href="iac.html" class="dropdown-item">Infrastructure as Code</a>
                                 <a href="ai-devops.html" class="dropdown-item">AI-Augmented DevOps</a>
 
+
                             </div>
                         </div>
-                        <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                        <a href="contact.html" class="nav-item nav-link">Contact</a>
                     </div>
                     <a href="" class="btn btn-light rounded-pill text-primary py-2 px-4 ms-lg-5">Free Quote</a>
                 </div>
@@ -81,12 +82,12 @@
 
             <div class="container-xxl bg-primary page-header">
                 <div class="container text-center">
-                    <h1 class="text-white animated zoomIn mb-3">Contact Us</h1>
+                    <h1 class="text-white animated zoomIn mb-3">AI-Augmented DevOps</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Contact</li>
+                            <li class="breadcrumb-item"><a class="text-white" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item"><a class="text-white" href="service.html">Service</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">AI-Augmented DevOps</li>
                         </ol>
                     </nav>
                 </div>
@@ -95,52 +96,62 @@
         <!-- Navbar & Hero End -->
 
 
-        <!-- Contact Start -->
+        <!-- Features Start -->
         <div class="container-xxl py-6">
             <div class="container">
-                <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Contact Us</div>
-                    <h2 class="mb-5">If You Have Any Query, Please Feel Free Contact Us</h2>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
-                        <form id="contact-form" onsubmit="return sendContactEmail(event)">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name" required>
-                                        <label for="name">Your Name</label>
+                <div class="row g-5">
+                    <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">AI-Augmented DevOps</div>
+                        <h2 class="mb-4">Why AI-Augmented DevOps?</h2>
+                        <p>AI is changing how DevOps and platform teams operate — from predicting failures before they happen to generating pipeline and infrastructure code in minutes instead of days. We help you adopt AI-augmented DevOps in a grounded, production-safe way: identifying where AI genuinely reduces toil and risk, and where it doesn't, so your teams get real leverage without adding a new layer of complexity to manage.</p>
+                        <p>Our engineers pair hands-on DevOps, SRE and security experience with practical, day-one AI tooling knowledge — so recommendations are rooted in what actually works in production, not vendor hype.</p>
+                        <a class="btn btn-primary rounded-pill py-3 px-5 mt-2" href="">Read More</a>
+                    </div>
+                    <div class="col-lg-7">
+                        <div class="row g-5">
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary ai-gradient rounded-circle me-3">
+                                        <i class="fa fa-brain text-white"></i>
                                     </div>
+                                    <h6 class="mb-0">AIOps: Anomaly Detection &amp; Self-Healing</h6>
                                 </div>
-                                <div class="col-md-6">
-                                    <div class="form-floating">
-                                        <input type="email" class="form-control" id="email" placeholder="Your Email" required>
-                                        <label for="email">Your Email</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject" required>
-                                        <label for="subject">Subject</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Leave a message here" id="message" style="height: 150px" required></textarea>
-                                        <label for="message">Message</label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                </div>
+                                <span>We Help You Deploy AIOps Capabilities That Continuously Watch Your Metrics, Logs And Traces — Detecting Anomalies Early, Correlating Incidents Across Systems, And Triggering Self-Healing Runbooks Before Customers Notice A Problem.</span>
                             </div>
-                        </form>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary ai-gradient rounded-circle me-3">
+                                        <i class="fa fa-robot text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">AI-Assisted CI/CD &amp; IaC</h6>
+                                </div>
+                                <span>Our Teams Use Tools Like Claude Code And GitHub Copilot To Author And Review Pipeline Definitions, Generate And Validate Terraform And Other IaC, And Catch Issues During Code Review — So Your Engineers Ship Infrastructure Changes Faster Without Cutting Corners On Quality.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary ai-gradient rounded-circle me-3">
+                                        <i class="fa fa-microchip text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">LLMOps &amp; MLOps In Production</h6>
+                                </div>
+                                <span>We Help You Take LLM And ML Applications From Prototype To Production — Setting Up Deployment Pipelines, Cost And Latency Monitoring, Evaluation Gates And Guardrails So Your AI Features Are As Operationally Sound As The Rest Of Your Platform.</span>
+                            </div>
+                            <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
+                                <div class="d-flex align-items-center mb-3">
+                                    <div class="flex-shrink-0 btn-square bg-primary ai-gradient rounded-circle me-3">
+                                        <i class="fa fa-user-shield text-white"></i>
+                                    </div>
+                                    <h6 class="mb-0">AI Agents For SRE &amp; DevSecOps</h6>
+                                </div>
+                                <span>We Design And Operate Autonomous Agents That Run Security Scans, Execute Runbooks, And Triage On-Call Alerts — With Clear Guardrails And Human Approval Where It Matters, So Automation Speeds Up Response Without Removing Accountability.</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
-        
+        <!-- Features End -->
+
 
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer pt-5 wow fadeIn" data-wow-delay="0.1s" style="margin-top: 6rem;">
@@ -190,8 +201,8 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">DevOps Connect</a>, All Right Reserved. 
-							
+                            &copy; <a class="border-bottom" href="#">DevOps Connect</a>, All Right Reserved.
+
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 							Designed By <a class="border-bottom" href="https://devopsconnect.github.io">DevOps Connect</a>
                             <br>Distributed By: <a class="border-bottom" href="https://devopsconnect.github.io" target="_blank">DevOps Connect</a>
@@ -225,20 +236,6 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
-    <script>
-        function sendContactEmail(event) {
-            event.preventDefault();
-            var name = document.getElementById('name').value;
-            var email = document.getElementById('email').value;
-            var subject = document.getElementById('subject').value;
-            var message = document.getElementById('message').value;
-            var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
-            window.location.href = 'mailto:devxopsconnect@gmail.com'
-                + '?subject=' + encodeURIComponent(subject)
-                + '&body=' + encodeURIComponent(body);
-            return false;
-        }
-    </script>
 </body>
 
 </html>
