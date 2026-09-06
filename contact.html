@@ -100,7 +100,8 @@
             <div class="container">
                 <div class="mx-auto text-center wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <div class="d-inline-block border rounded-pill text-primary px-4 mb-3">Contact Us</div>
-                    <h2 class="mb-5">If You Have Any Query, Please Feel Free Contact Us</h2>
+                    <h2 class="mb-3">If You Have Any Query, Please Feel Free Contact Us</h2>
+                    <p class="mb-0">This form opens a pre-filled message in Gmail (in a new browser tab) to send us your query. If a new tab doesn't open, just email us directly at <a href="mailto:devxopsconnect@gmail.com">devxopsconnect@gmail.com</a>.</p>
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
@@ -233,9 +234,11 @@
             var subject = document.getElementById('subject').value;
             var message = document.getElementById('message').value;
             var body = 'Name: ' + name + '\nEmail: ' + email + '\n\n' + message;
-            window.location.href = 'mailto:devxopsconnect@gmail.com'
-                + '?subject=' + encodeURIComponent(subject)
+            var gmailUrl = 'https://mail.google.com/mail/?view=cm&fs=1'
+                + '&to=' + encodeURIComponent('devxopsconnect@gmail.com')
+                + '&su=' + encodeURIComponent(subject)
                 + '&body=' + encodeURIComponent(body);
+            window.open(gmailUrl, '_blank');
             return false;
         }
     </script>
